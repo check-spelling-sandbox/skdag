@@ -91,7 +91,7 @@ def _stack_inputs(dag, X, node):
 
 def _leaf_estimators_have(attr, how="all"):
     """Check that leaves have `attr`.
-    Used together with `avaliable_if` in `DAG`."""
+    Used together with `available_if` in `DAG`."""
 
     def check_leaves(self):
         # raises `AttributeError` with all details if `attr` does not exist
