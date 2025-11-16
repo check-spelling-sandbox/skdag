@@ -589,7 +589,7 @@ class DAG(_BaseComposition):
         return self.graph_.nodes[name]["step"].estimator
 
     def _fit(self, X, y=None, **fit_params_steps):
-        # Setup the memory
+        # Set up the memory
         memory = check_memory(self.memory)
 
         fit_transform_one_cached = memory.cache(_fit_transform_one)
@@ -639,7 +639,7 @@ class DAG(_BaseComposition):
         return Xs
 
     def _transform(self, X, **fn_params_steps):
-        # Setup the memory
+        # Set up the memory
         memory = check_memory(self.memory)
 
         transform_one_cached = memory.cache(_transform_one)
