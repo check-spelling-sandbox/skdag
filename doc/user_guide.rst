@@ -87,7 +87,7 @@ selector function that conforms to :meth:`sklearn.compose.make_column_selector`.
 If you wish to specify string column names for dependencies, ensure you provide the
 ``infer_dataframe=True`` option when you create a dag. This will ensure that all
 estimator outputs are coerced into dataframes. Where possible column names will be
-inferred, otherwise the column names will just be the name of the estimator step with an
+inferred; otherwise, the column names will just be the name of the estimator step with an
 appended index number. If you do not specify ``infer_dataframe=True``, the dag will
 leave the outputs unmodified, which in most cases will mean numpy arrays that only
 support numeric column indices.
