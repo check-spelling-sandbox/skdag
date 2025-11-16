@@ -312,7 +312,7 @@ class DAGStep:
         Either a hard-coded list of column names to apply to any output data, or the
         string "infer", which means the column outputs will be assumed to match the
         column inputs if the output is 2d and not already a dataframe, the estimator is
-        a transformer, and the final axis dimensions match the inputs. Otherwise the
+        a transformer, and the final axis dimensions match the inputs. Otherwise, the
         column names will be assumed to be the step name + index if the output is not
         already a dataframe. If set to ``None`` or inference is not possible, the
         outputs will be left unmodified.
