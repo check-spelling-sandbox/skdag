@@ -134,7 +134,7 @@ returned as a :class:`sklearn.utils.Bunch<Bunch>`:
 
 Note that we have different types of output here because ``LogisticRegression`` natively
 supports dataframe input whereas ``RandomForestClassifier`` does not. We could fix this
-by specifying ``infer_dataframe=True`` when we createed our ``rf`` DAG extension.
+by specifying ``infer_dataframe=True`` when we created our ``rf`` DAG extension.
 
 Similarly, multiple inputs are also acceptable and inputs can be provided by
 specifying ``X`` and ``y`` as ``dict``-like objects.
