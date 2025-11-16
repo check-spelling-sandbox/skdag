@@ -568,7 +568,7 @@ class DAG(_BaseComposition):
                 stage = [
                     step
                     for step in stage
-                    if step.estimator is not None and step.estimator != "passthough"
+                    if step.estimator is not None and step.estimator != "passthrough"
                 ]
 
             if len(stage) == 0:
