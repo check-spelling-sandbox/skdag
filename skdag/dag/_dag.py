@@ -44,7 +44,7 @@ def _get_columns(X, dep, cols, is_root, dep_is_passthrough, axis=1):
         cols = cols(X)
 
     if not is_root and not dep_is_passthrough:
-        # The DAG will prepend output columns with the step name, so add this in to any
+        # The DAG will prepend output columns with the step name, so add this to any
         # dep columns if missing. This helps keep user-provided deps readable.
         if isinstance(cols, str):
             cols = cols if cols.startswith(f"{dep}__") else f"{dep}__{cols}"
